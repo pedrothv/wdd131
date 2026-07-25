@@ -1,0 +1,21 @@
+@media (min-width: 700px) {
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+  }
+
+  #botao-menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 0;
+  }
+
+}

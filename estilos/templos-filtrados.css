@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mulish', Arial, sans-serif;
+  background-color: #f7f7f5;
+  color: #262626;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #0b3d2e;
+  color: white;
+  padding: 15px;
+}
+
+.topo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topo-header p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#botao-menu {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+nav.mostrar {
+  display: flex;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+nav a:hover {
+  color: #f2c14e;
+}
+
+main {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+main h1 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #0b3d2e;
+  margin-bottom: 20px;
+}
+
+#galeria-templos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+figure {
+  background-color: white;
+  border: 1px solid #dcdcd6;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+figcaption {
+  padding: 10px;
+  color: #0b3d2e;
+}
+
+figcaption h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+figcaption p {
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #555;
+  border-top: 1px solid #dcdcd6;
+  margin-top: 30px;
+}

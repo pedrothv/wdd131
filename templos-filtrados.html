@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 131 – Álbum do Templo Filtrado - Pedro Paulo Paz Pereira</title>
+    <meta name="description"
+        content="Álbum do Templo com filtro dinâmico. Pedro Paulo Paz Pereira.">
+    <meta name="author" content="Pedro Paulo Paz Pereira">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Mulish:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/templos-filtrados.css">
+    <link rel="stylesheet" href="estilos/templos-grandes-filtrados.css">
+
+    <script src="scripts/templos-filtrados.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="topo-header">
+            <p>Álbum do Templo</p>
+            <button id="botao-menu" aria-label="Abrir menu">☰</button>
+        </div>
+        <nav>
+            <a href="#" id="link-inicio">Página Inicial</a>
+            <a href="#" id="link-antigo">Antigo</a>
+            <a href="#" id="link-novo">Novo</a>
+            <a href="#" id="link-grande">Grande</a>
+            <a href="#" id="link-pequeno">Pequeno</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="titulo-pagina">Página Inicial</h1>
+
+        <div id="galeria-templos"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anoatual"></span> Pedro Paulo Paz Pereira, Rio de Janeiro - Brasil</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+
+</body>
+
+</html>
