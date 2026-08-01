@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documento de Planejamento do Site — ManutençãoFácil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../estilos/planejamentodosite.css" />
+</head>
+<body>
+
+  <header>
+    <h1>ManutençãoFácil</h1>
+    <p class="subtitulo">Documento de Planejamento do Site — WDD 131</p>
+  </header>
+
+  <main>
+
+    <section class="bloco">
+      <h2>Nome do Site</h2>
+      <p><strong>ManutençãoFácil</strong> — o nome comunica diretamente o benefício central do site: tornar simples e acessível o acompanhamento da manutenção preventiva de veículos. É curto, fácil de lembrar e reforça a promessa de reduzir a complexidade de saber "quando fazer o quê" no carro.</p>
+      <p class="rotulo-dado">Disponibilidade de domínio (opcional): manutencaofacil.com.br</p>
+    </section>
+
+    <section class="bloco">
+      <h2>Finalidade do Site</h2>
+      <p>O ManutençãoFácil é uma ferramenta de controle pessoal de manutenção veicular. O usuário cadastra seus veículos informando modelo, ano e quilometragem atual. A partir disso, o site compara os dados com uma tabela de intervalos padrão de manutenção (baseada em quilometragem e tempo) e indica o status de cada item — em dia, atenção ou atrasado — ajudando o motorista a se antecipar a desgastes e evitar problemas mecânicos e custos maiores.</p>
+    </section>
+
+    <section class="bloco">
+      <h2>Cenários</h2>
+      <ul class="cenarios">
+        <li>Como sei quando devo trocar o óleo do meu carro se não lembro da última troca?</li>
+        <li>Como acompanho a manutenção de mais de um veículo da família em um só lugar?</li>
+        <li>O que acontece se eu esquecer de registrar a quilometragem por um tempo — o site ainda me avisa corretamente?</li>
+      </ul>
+    </section>
+
+    <section class="bloco">
+      <h2>Esquema de Cores</h2>
+      <p>A paleta usa preto e tons de grafite como base — remetendo ao painel de instrumentos de um veículo — com laranja como cor de ação e destaque, e âmbar/verde reservados para comunicar o status de manutenção, como luzes de alerta reais de um painel automotivo.</p>
+      <div class="paleta">
+        <div class="swatch preto-painel">
+          Preto 
+          <span class="hex">#0B0B0C</span>
+          <span class="uso">Uso: fundo geral das páginas</span>
+        </div>
+        <div class="swatch grafite">
+          Grafite
+          <span class="hex">#1B1B1D</span>
+          <span class="uso">Uso: cards, seções e superfícies elevadas</span>
+        </div>
+        <div class="swatch laranja">
+          Laranja 
+          <span class="hex">#FF5A1F</span>
+          <span class="uso">Uso: botões, links, títulos de destaque, bordas de seção</span>
+        </div>
+        <div class="swatch ambar">
+          Âmbar
+          <span class="hex">#FFB020</span>
+          <span class="uso">Uso: status "manutenção próxima", subtítulos</span>
+        </div>
+        <div class="swatch verde">
+          Verde 
+          <span class="hex">#35C97A</span>
+          <span class="uso">Uso: status "em dia"</span>
+        </div>
+        <div class="swatch branco">
+          Branco 
+          <span class="hex">#F2F1EE</span>
+          <span class="uso">Uso: texto principal sobre fundo escuro</span>
+        </div>
+      </div>
+
+      <h3 style="margin-top:2rem;">Aplicação: indicador de status (gauge)</h3>
+      <p>O elemento de assinatura visual do site é um pequeno mostrador (gauge) inspirado em velocímetros, usado nos cards de cada veículo para indicar o status de manutenção de forma instantânea:</p>
+      <div class="gauge-demo">
+        <div>
+          <div class="gauge ok"></div>
+          <div class="gauge-legenda">Em dia</div>
+        </div>
+        <div>
+          <div class="gauge atencao"></div>
+          <div class="gauge-legenda">Atenção</div>
+        </div>
+        <div>
+          <div class="gauge atrasado"></div>
+          <div class="gauge-legenda">Atrasado</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloco">
+      <h2>Tipografia</h2>
+      <p>Foram escolhidas três fontes, cada uma com um papel específico, reforçando a identidade "painel digital":</p>
+
+      <div class="exemplo-tipografia">
+        <span class="amostra-titulo">Barlow Condensed</span>
+        <p class="amostra-corpo">Uso: títulos e cabeçalhos de seção. Fonte condensada e em caixa alta, remetendo à tipografia usada em painéis e mostradores automotivos.</p>
+      </div>
+
+      <div class="exemplo-tipografia">
+        <span class="amostra-corpo" style="font-size:1.3rem;">Inter</span>
+        <p class="amostra-corpo">Uso: corpo de texto, parágrafos e descrições. Fonte sans-serif limpa, priorizando legibilidade em blocos de texto mais longos.</p>
+      </div>
+
+      <div class="exemplo-tipografia">
+        <span class="amostra-dados">JetBrains Mono — 000.000 KM / 12 · 08 · 2026</span>
+        <p class="amostra-corpo">Uso: dados numéricos — quilometragem, datas, contadores. Fonte monoespaçada que reforça a sensação de "leitura de hodômetro digital".</p>
+      </div>
+    </section>
+
+    <section class="bloco">
+      <h2>Wireframe — Página Inicial</h2>
+      <p>Esboço da estrutura da página inicial, mostrando o mesmo layout adaptado para telas menores (mobile) e maiores (desktop).</p>
+      <div class="wireframes">
+        <div>
+          <span class="frame-label">Mobile</span>
+          <div class="wf-mobile">
+            <div class="wf-box wf-nav">LOGO + MENU ☰</div>
+            <div class="wf-box wf-hero">HERO / CHAMADA + GAUGE</div>
+            <div class="wf-box">RESUMO DE VEÍCULOS</div>
+            <div class="wf-box">CARD VEÍCULO 1</div>
+            <div class="wf-box">CARD VEÍCULO 2</div>
+            <div class="wf-box">BOTÃO: CADASTRAR VEÍCULO</div>
+            <div class="wf-box wf-footer">RODAPÉ + LINK REFERÊNCIAS</div>
+          </div>
+        </div>
+        <div>
+          <span class="frame-label">Desktop</span>
+          <div class="wf-desktop">
+            <div class="wf-box wf-nav">LOGO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOME · CADASTRAR · PAINEL</div>
+            <div class="wf-box wf-hero">HERO: TÍTULO + TEXTO + GAUGE ILUSTRATIVO</div>
+            <div class="wf-cards">
+              <div class="wf-box">VEÍCULO 1<br/>STATUS</div>
+              <div class="wf-box">VEÍCULO 2<br/>STATUS</div>
+              <div class="wf-box">VEÍCULO 3<br/>STATUS</div>
+            </div>
+            <div class="wf-box">FORMULÁRIO RÁPIDO DE CADASTRO</div>
+            <div class="wf-box wf-footer">RODAPÉ · LINKS · REFERÊNCIAS</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    ManutençãoFácil · Documento de Planejamento do Site · WDD 131 — Semana 5
+  </footer>
+
+</body>
+</html>
