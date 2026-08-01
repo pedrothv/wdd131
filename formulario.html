@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 131 – Avaliação de Produto - Pedro Paulo Paz Pereira</title>
+    <meta name="description"
+        content="Formulario de avaliacao de produto. Tarefa de WDD 131. Pedro Paulo Paz Pereira.">
+    <meta name="author" content="Pedro Paulo Paz Pereira">
+
+    <link rel="stylesheet" href="estilos/formulario.css">
+
+    <script src="scripts/formulario.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Avaliação do Produto</h1>
+    </header>
+
+    <main>
+        <form action="avaliacao.html" method="get">
+
+            <div class="campo">
+                <label for="produto">Nome do Produto</label>
+                <select id="produto" name="produto" required>
+                    <option value="" disabled selected>Selecione um Produto...</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <p class="rotulo-grupo">Classificação Geral</p>
+                <div class="estrelas">
+
+                    <div class="estrela-item">
+                        <label for="nota1">&star;</label>
+                        <input type="radio" id="nota1" name="classificacao" value="1" required>
+                    </div>
+
+                    <div class="estrela-item">
+                        <label for="nota2">&star;&star;</label>
+                        <input type="radio" id="nota2" name="classificacao" value="2" required>
+                    </div>
+
+                    <div class="estrela-item">
+                        <label for="nota3">&star;&star;&star;</label>
+                        <input type="radio" id="nota3" name="classificacao" value="3" required>
+                    </div>
+
+                    <div class="estrela-item">
+                        <label for="nota4">&star;&star;&star;&star;</label>
+                        <input type="radio" id="nota4" name="classificacao" value="4" required>
+                    </div>
+
+                    <div class="estrela-item">
+                        <label for="nota5">&star;&star;&star;&star;&star;</label>
+                        <input type="radio" id="nota5" name="classificacao" value="5" required>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="campo">
+                <label for="dataInstalacao">Data de Instalação</label>
+                <input type="date" id="dataInstalacao" name="dataInstalacao" required>
+            </div>
+
+            <div class="campo">
+                <p class="rotulo-grupo">Quais recursos você achou úteis no produto?</p>
+                <p class="dica">(Marque todos que se aplicam)</p>
+
+                <div class="checkbox-item">
+                    <input type="checkbox" id="durabilidade" name="recursos" value="durabilidade">
+                    <label for="durabilidade">Durabilidade</label>
+                </div>
+
+                <div class="checkbox-item">
+                    <input type="checkbox" id="facilidadeUso" name="recursos" value="facilidade de uso">
+                    <label for="facilidadeUso">Facilidade de Uso</label>
+                </div>
+
+                <div class="checkbox-item">
+                    <input type="checkbox" id="desempenho" name="recursos" value="desempenho">
+                    <label for="desempenho">Desempenho</label>
+                </div>
+
+                <div class="checkbox-item">
+                    <input type="checkbox" id="design" name="recursos" value="design">
+                    <label for="design">Design</label>
+                </div>
+            </div>
+
+            <div class="campo">
+                <label for="avaliacaoEscrita">Avaliação Escrita <span class="opcional">(Opcional)</span></label>
+                <textarea id="avaliacaoEscrita" name="avaliacaoEscrita" rows="5"></textarea>
+            </div>
+
+            <div class="campo">
+                <label for="nomeUsuario">Seu Nome <span class="opcional">(Opcional)</span></label>
+                <input type="text" id="nomeUsuario" name="nomeUsuario">
+            </div>
+
+            <div class="campo">
+                <input type="submit" value="Publicar Avaliação">
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anoatual"></span> Pedro Paulo Paz Pereira, Rio de Janeiro - Brasil</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+
+</body>
+
+</html>
