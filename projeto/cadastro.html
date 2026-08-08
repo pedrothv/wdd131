@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cadastre seu veículo no ManutençãoFácil." />
+  <title>Cadastrar Veículo - ManutençãoFácil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Inter&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos/estilo.css" />
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="nav-container">
+      <a class="marca" href="index.html">Manutenção<span>Fácil</span></a>
+      <nav class="nav-principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="cadastro.html">Cadastrar Veículo</a></li>
+          <li><a href="painel.html">Meu Painel</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="secao hero">
+      <div class="hero-texto">
+        <h1>Cadastrar <span class="destaque">Veículo</span></h1>
+        <p>Preencha os dados abaixo. As informações ficam salvas no seu navegador.</p>
+      </div>
+      <img src="imagens/carro.jpg" alt="Painel de instrumentos de um carro" loading="lazy" />
+    </section>
+
+    <section class="secao">
+      <form class="formulario" id="formulario">
+
+        <div class="campo">
+          <label for="nome">Apelido do veículo</label>
+          <input type="text" id="nome" name="nome" required minlength="2" maxlength="40" />
+        </div>
+
+        <div class="campo">
+          <label for="modelo">Modelo</label>
+          <input type="text" id="modelo" name="modelo" required minlength="2" maxlength="60" />
+        </div>
+
+        <div class="campo">
+          <label for="ano">Ano</label>
+          <input type="number" id="ano" name="ano" min="1980" max="2027" required />
+        </div>
+
+        <div class="campo">
+          <label for="kmAtual">Quilometragem atual</label>
+          <input type="number" id="kmAtual" name="kmAtual" min="0" required />
+        </div>
+
+        <div class="campo">
+          <label for="kmTroca">KM da última troca de óleo</label>
+          <input type="number" id="kmTroca" name="kmTroca" min="0" required />
+        </div>
+
+        <div class="campo">
+          <label for="dataTroca">Data da última troca de óleo</label>
+          <input type="date" id="dataTroca" name="dataTroca" required />
+        </div>
+
+        <button type="submit" class="botao botao-principal">Salvar veículo</button>
+
+        <div id="mensagem"></div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>ManutençãoFácil - Projeto acadêmico WDD 131 - <a href="referencias.html">Referências</a></p>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>

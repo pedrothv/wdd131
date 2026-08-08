@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ManutençãoFácil ajuda você a acompanhar a manutenção dos seus veículos." />
+  <title>ManutençãoFácil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Inter&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos/estilo.css" />
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="nav-container">
+      <a class="marca" href="index.html">Manutenção<span>Fácil</span></a>
+      <nav class="nav-principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="cadastro.html">Cadastrar Veículo</a></li>
+          <li><a href="painel.html">Meu Painel</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="secao hero">
+      <div class="hero-texto">
+        <h1>Sua manutenção veicular <span class="destaque">sob controle</span></h1>
+        <p>Cadastre seus veículos, informe a quilometragem atual e o ManutençãoFácil mostra quando cada item precisa de atenção, com base em quilometragem e tempo.</p>
+        <a class="botao botao-principal" href="cadastro.html">Cadastrar meu veículo</a>
+        <a class="botao botao-segundo" href="painel.html">Ver meu painel</a>
+      </div>
+      <img src="imagens/painel.jpg" alt="Carro branco estacionado em uma garagem com outros veículos" loading="lazy" />
+    </section>
+
+    <section class="secao">
+      <h2>O que você acompanha</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Óleo e filtros</h3>
+          <p>Alertas por quilometragem e por tempo, o que vencer primeiro.</p>
+        </div>
+        <div class="card">
+          <h3>Freios</h3>
+          <p>Saiba quando revisar as pastilhas de freio.</p>
+        </div>
+        <div class="card">
+          <h3>Correia dentada</h3>
+          <p>Item de intervalo mais longo, também acompanhado por aqui.</p>
+        </div>
+      </div>
+
+      <div class="legenda">
+        <span class="chip"><span class="bola ok"></span> Em dia</span>
+        <span class="chip"><span class="bola atencao"></span> Atenção</span>
+        <span class="chip"><span class="bola atrasado"></span> Atrasado</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>ManutençãoFácil - Projeto acadêmico WDD 131 - <a href="referencias.html">Referências</a></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Acompanhe o status de manutenção dos seus veículos." />
+  <title>Meu Painel - ManutençãoFácil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Inter&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos/estilo.css" />
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="nav-container">
+      <a class="marca" href="index.html">Manutenção<span>Fácil</span></a>
+      <nav class="nav-principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="cadastro.html">Cadastrar Veículo</a></li>
+          <li><a href="painel.html">Meu Painel</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="secao">
+      <h1>Meu <span class="destaque">Painel</span></h1>
+      <p>Veja o status de manutenção de cada veículo cadastrado.</p>
+      <div class="legenda">
+        <span class="chip"><span class="bola ok"></span> Em dia</span>
+        <span class="chip"><span class="bola atencao"></span> Atenção</span>
+        <span class="chip"><span class="bola atrasado"></span> Atrasado</span>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div id="lista-veiculos"></div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>ManutençãoFácil - Projeto acadêmico WDD 131 - <a href="referencias.html">Referências</a></p>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0b0b0c;
+  color: #f2f1ee;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #ff5a1f;
+}
+
+.cabecalho {
+  border-bottom: 1px solid #2a2a2d;
+  padding: 1rem 1.5rem;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.marca {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #f2f1ee;
+  text-decoration: none;
+}
+
+.marca span {
+  color: #ff5a1f;
+}
+
+.nav-principal ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-principal a {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f2f1ee;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.secao {
+  padding: 2rem 0;
+  border-bottom: 1px solid #2a2a2d;
+}
+
+h1, h2, h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  color: #f2f1ee;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+  border-left: 4px solid #ff5a1f;
+  padding-left: 0.7rem;
+}
+
+.destaque {
+  color: #ff5a1f;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-texto {
+  flex: 1;
+  min-width: 260px;
+}
+
+.hero img {
+  flex: 1;
+  min-width: 260px;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.botao {
+  display: inline-block;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 6px;
+  text-decoration: none;
+  border: 2px solid #ff5a1f;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.botao-principal {
+  background-color: #ff5a1f;
+  color: #1a0a00;
+}
+
+.botao-segundo {
+  background-color: transparent;
+  color: #f2f1ee;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background-color: #1b1b1d;
+  border: 1px solid #2a2a2d;
+  border-left: 4px solid #ff5a1f;
+  border-radius: 6px;
+  padding: 1.2rem 1.4rem;
+  flex: 1;
+  min-width: 220px;
+}
+
+.legenda {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.bola {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.bola.ok {
+  background-color: #35c97a;
+}
+
+.bola.atencao {
+  background-color: #ffb020;
+}
+
+.bola.atrasado {
+  background-color: #ff5a1f;
+}
+
+.formulario {
+  background-color: #1b1b1d;
+  border: 1px solid #2a2a2d;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  max-width: 500px;
+}
+
+.campo {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+.campo input {
+  background-color: #0b0b0c;
+  border: 1px solid #2a2a2d;
+  border-radius: 6px;
+  color: #f2f1ee;
+  font-family: "Inter", sans-serif;
+  padding: 0.6rem 0.8rem;
+}
+
+#mensagem {
+  margin-top: 1rem;
+  color: #35c97a;
+}
+
+.veiculo {
+  background-color: #1b1b1d;
+  border: 1px solid #2a2a2d;
+  border-radius: 6px;
+  padding: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.veiculo ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.veiculo li {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0b0b0c;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.badge {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+}
+
+.badge.ok {
+  background-color: #35c97a;
+  color: #04180d;
+}
+
+.badge.atencao {
+  background-color: #ffb020;
+  color: #1a0a00;
+}
+
+.badge.atrasado {
+  background-color: #ff5a1f;
+  color: #1a0a00;
+}
+
+.vazio {
+  text-align: center;
+  color: #9a9a9e;
+  padding: 2rem 1rem;
+  border: 1px dashed #2a2a2d;
+  border-radius: 6px;
+}
+
+.rodape {
+  border-top: 1px solid #2a2a2d;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: #9a9a9e;
+  font-size: 0.85rem;
+}
+
+.rodape a {
+  color: #9a9a9e;
+}
+
+@media (min-width: 700px) {
+  .cards {
+    flex-wrap: nowrap;
+  }
+}
